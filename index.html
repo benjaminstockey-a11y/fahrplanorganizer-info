@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fahrplanorganizer Info</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+<style>
+  :root{
+    --paper:#f4f1e9;
+    --surface:#ffffff;
+    --ink:#182226;
+    --ink-soft:#57656a;
+    --ink-faint:#8b9296;
+    --line:#dcd6c6;
+    --line-strong:#c3bca8;
+    --brand:#1f3d3a;
+    --brand-soft:#2c5450;
+    --accent:#c9622a;
+    --code-bg:#eee9db;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#12181a;
+      --surface:#182220;
+      --ink:#ecefe9;
+      --ink-soft:#a3b0ab;
+      --ink-faint:#71807b;
+      --line:#2c3733;
+      --line-strong:#3d4a44;
+      --brand:#84bcb1;
+      --brand-soft:#5c948a;
+      --accent:#e8833e;
+      --code-bg:#1c2624;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#12181a;
+    --surface:#182220;
+    --ink:#ecefe9;
+    --ink-soft:#a3b0ab;
+    --ink-faint:#71807b;
+    --line:#2c3733;
+    --line-strong:#3d4a44;
+    --brand:#84bcb1;
+    --brand-soft:#5c948a;
+    --accent:#e8833e;
+    --code-bg:#1c2624;
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"IBM Plex Sans","Segoe UI",sans-serif;
+    font-size:15.5px;
+    line-height:1.65;
+  }
+  .page{ max-width:700px; margin:0 auto; padding:52px 22px 90px; }
+
+  header.hero{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-bottom:38px;
+  }
+  .mark{
+    width:46px; height:46px;
+    border-radius:12px;
+    background:var(--brand);
+    color:#f4f1e9;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:"Archivo",sans-serif;
+    font-weight:800;
+    font-size:18px;
+    flex:0 0 auto;
+  }
+  .hero-text h1{
+    font-family:"Archivo",sans-serif;
+    font-weight:800;
+    font-size:22px;
+    margin:0 0 2px;
+    letter-spacing:-0.01em;
+  }
+  .hero-text p{
+    margin:0;
+    font-size:12.5px;
+    color:var(--ink-soft);
+    font-family:"IBM Plex Mono",monospace;
+    letter-spacing:0.02em;
+  }
+
+  nav.jump{
+    display:flex;
+    gap:10px;
+    margin-bottom:44px;
+    flex-wrap:wrap;
+  }
+  nav.jump a{
+    font-family:"IBM Plex Mono",monospace;
+    font-size:11.5px;
+    letter-spacing:0.04em;
+    color:var(--brand-soft);
+    text-decoration:none;
+    padding:6px 12px;
+    border:1px solid var(--line);
+    border-radius:999px;
+    background:var(--surface);
+  }
+  nav.jump a:hover{ border-color:var(--brand-soft); }
+
+  section{ margin-bottom:52px; scroll-margin-top:24px; }
+  section h2{
+    font-family:"Archivo",sans-serif;
+    font-weight:700;
+    font-size:19px;
+    margin:0 0 6px;
+    letter-spacing:-0.005em;
+  }
+  section .eyebrow{
+    font-family:"IBM Plex Mono",monospace;
+    font-size:10.5px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--accent);
+    display:block;
+    margin-bottom:8px;
+  }
+  section p{ margin:12px 0; color:var(--ink); }
+  section p.lede{ color:var(--ink-soft); font-size:14.5px; }
+
+  h3{
+    font-family:"Archivo",sans-serif;
+    font-weight:600;
+    font-size:14.5px;
+    margin:26px 0 8px;
+  }
+
+  ul{ margin:10px 0; padding-left:20px; }
+  li{ margin:6px 0; }
+
+  .card{
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:16px 18px;
+    margin:16px 0;
+  }
+  .card dl{ margin:0; display:grid; grid-template-columns:auto 1fr; gap:6px 16px; font-size:13.5px; }
+  .card dt{ font-family:"IBM Plex Mono",monospace; font-size:11px; color:var(--ink-faint); padding:3px 0; }
+  .card dd{ margin:0; padding:3px 0; border-bottom:1px solid var(--line); }
+  .card dd:last-of-type{ border-bottom:none; }
+
+  .data-table{ width:100%; border-collapse:collapse; margin:16px 0; font-size:13.5px; }
+  .data-table th{
+    text-align:left;
+    font-family:"IBM Plex Mono",monospace;
+    font-size:10.5px;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+    font-weight:500;
+    padding:0 10px 8px 0;
+    border-bottom:1px solid var(--line-strong);
+  }
+  .data-table td{ padding:9px 10px 9px 0; border-bottom:1px solid var(--line); vertical-align:top; }
+
+  .callout{
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-left:3px solid var(--brand-soft);
+    border-radius:10px;
+    padding:14px 16px;
+    margin:16px 0;
+    font-size:13.5px;
+    color:var(--ink-soft);
+  }
+  .callout b{ color:var(--ink); }
+
+  code{
+    font-family:"IBM Plex Mono",monospace;
+    font-size:12.5px;
+    background:var(--code-bg);
+    padding:1.5px 5px;
+    border-radius:4px;
+  }
+
+  hr.rule{ border:none; border-top:1px solid var(--line); margin:0 0 40px; }
+  footer{
+    font-family:"IBM Plex Mono",monospace;
+    font-size:11px;
+    color:var(--ink-faint);
+    display:flex;
+    justify-content:space-between;
+    padding-top:20px;
+    border-top:1px solid var(--line);
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <header class="hero">
+    <div class="mark">FO</div>
+    <div class="hero-text">
+      <h1>Fahrplanorganizer</h1>
+      <p>Interne Tourenplanungs-App</p>
+    </div>
+  </header>
+
+  <nav class="jump">
+    <a href="#start">Über die App</a>
+    <a href="#datenschutz">Datenschutzerklärung</a>
+  </nav>
+
+  <section id="start">
+    <span class="eyebrow">Startseite</span>
+    <h2>Über den Fahrplanorganizer</h2>
+    <p class="lede">
+      Eine private App, mit der Fahrer und Disponenten Touren verwalten —
+      Tourenpläne als PDF einlesen, Stationen und Fahrtage pflegen und
+      Routen mit Google Maps abgleichen.
+    </p>
+
+    <h3>Was die App macht</h3>
+    <ul>
+      <li>Tourenpläne (PDF) automatisch auslesen und als Tour anlegen</li>
+      <li>Stationen, Fahrtage und Anhänge lokal auf dem Gerät verwalten</li>
+      <li>Eine Route mit den Stationen einer Tour in Google Maps öffnen</li>
+    </ul>
+
+    <div class="card">
+      <dl>
+        <dt>Verwendung</dt><dd>Ausschließlich intern, für Mitarbeitende</dd>
+        <dt>Anmeldung</dt><dd>Mit dem eigenen Google-Konto</dd>
+      </dl>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section id="datenschutz">
+    <span class="eyebrow">Rechtliches</span>
+    <h2>Datenschutzerklärung</h2>
+    <p class="lede">Stand: 29.08.2026</p>
+
+    <h3>Welche Daten die App verarbeitet</h3>
+    <table class="data-table">
+      <tr><th>Daten</th><th>Zweck</th><th>Speicherort</th></tr>
+      <tr>
+        <td>Name, E-Mail-Adresse (aus Google-Konto)</td>
+        <td>Anmeldung in der App</td>
+        <td>Nur auf dem Gerät der Person</td>
+      </tr>
+      <tr>
+        <td>Tourdaten (Region, Stationen, Namen, Adressen)</td>
+        <td>Tourenplanung</td>
+        <td>Ausschließlich lokal auf dem Gerät</td>
+      </tr>
+      <tr>
+        <td>Angehängte Dateien</td>
+        <td>Nachweis/Referenz zur Tour</td>
+        <td>Ausschließlich lokal auf dem Gerät</td>
+      </tr>
+    </table>
+
+    <div class="callout">
+      Es gibt <b>keinen zentralen Server</b>, der diese Daten sammelt oder speichert.
+      Alle Daten verlassen das jeweilige Gerät nicht — außer wenn eine Person selbst
+      eine Route über die Google-Maps-Funktion öffnet.
+    </div>
+
+    <h3>Google-Anmeldung</h3>
+    <p>
+      Die Anmeldung erfolgt über Google Sign-In. Dabei erhält die App von Google
+      Name und E-Mail-Adresse des angemeldeten Kontos, um die Person in der App
+      zu identifizieren. Es werden keine weiteren Google-Kontodaten abgefragt
+      oder gespeichert.
+    </p>
+
+    <h3>Weitergabe an Dritte</h3>
+    <p>Es findet keine Weitergabe von Daten an Dritte statt.</p>
+
+    <h3>Rechte der betroffenen Personen</h3>
+    <p>
+      Da alle Daten lokal auf dem jeweiligen Gerät gespeichert werden, können sie
+      jederzeit direkt in der App gelöscht werden (Tour löschen, Anhang entfernen,
+      Abmelden).
+    </p>
+  </section>
+
+  <footer>
+    <span>Fahrplanorganizer</span>
+    <span>Interne App</span>
+  </footer>
+
+</div>
+</body>
+</html>
