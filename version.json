@@ -1,5 +1,5 @@
 {
-  "version": "2.15.0",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.15.0/app-debug.apk",
-  "notes": "Vorschaubild bei Anhaengen ist jetzt deutlich groesser und oeffnet beim Antippen direkt die Datei."
+  "version": "2.16.0",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.16.0/app-debug.apk",
+  "notes": "Der Verlauf im Updates-Menue zeigt jetzt echte Versionen von GitHub statt Beispieldaten und ist aufklappbar."
 }
