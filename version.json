@@ -1,5 +1,5 @@
 {
-  "version": "2.9.0",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.9.0/app-debug.apk",
-  "notes": "Neuer Benachrichtigungs-Schalter im Menü, meldet neue Updates per Push-Benachrichtigung."
+  "version": "2.10.0",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.10.0/app-debug.apk",
+  "notes": "Anhänge zeigen jetzt eine Bildvorschau (PDF-Miniaturbild bzw. Foto) statt nur Dateiname."
 }
