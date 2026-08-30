@@ -1,5 +1,5 @@
 {
-  "version": "2.10.0",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.10.0/app-debug.apk",
-  "notes": "Anhänge zeigen jetzt eine Bildvorschau (PDF-Miniaturbild bzw. Foto) statt nur Dateiname."
+  "version": "2.10.1",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.10.1/app-debug.apk",
+  "notes": "Bugfix: Bildvorschau bei Anhängen, die vor dem letzten Update hinzugefügt wurden, wird jetzt automatisch nachträglich erzeugt."
 }
