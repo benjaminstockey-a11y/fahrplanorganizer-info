@@ -1,5 +1,5 @@
 {
-  "version": "2.17.0",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.17.0/app-debug.apk",
-  "notes": "Neu: Hinweg/Rueckweg-Auswahl bei Stationen, wenn das PDF beide Richtungen abdeckt. Google-Maps-Sync nutzt die ausgewaehlte Richtung."
+  "version": "2.17.1",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.17.1/app-debug.apk",
+  "notes": "Bugfix: Bestehende Touren mit PDF-Anhang erhalten die Hinweg/Rueckweg-Auswahl jetzt automatisch nachtraeglich."
 }
