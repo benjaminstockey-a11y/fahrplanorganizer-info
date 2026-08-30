@@ -1,5 +1,5 @@
 {
-  "version": "2.20.0",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.20.0/app-debug.apk",
-  "notes": "Neu: Fahrername in Einstellungen hinterlegbar. Beim Google-Maps-Sync gibt das Handy jetzt eine Sprachansage mit Begruessung aus."
+  "version": "2.21.0",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.21.0/app-debug.apk",
+  "notes": "Neu: 'Meine Adresse' steht jetzt immer als letzte Station. Route startet bei Google-Maps-Sync jetzt immer automatisch am aktuellen GPS-Standort."
 }
