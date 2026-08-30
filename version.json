@@ -1,5 +1,5 @@
 {
-  "version": "2.13.0",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.13.0/app-debug.apk",
-  "notes": "Neu: Fahrtrichtung wird automatisch erkannt (Schule als letzte Station bei Hinfahrt, als erste Station bei Rueckfahrt). Neue Einstellung 'Meine Adresse' wird automatisch als Start-/Endstation eingefuegt."
+  "version": "2.14.0",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.14.0/app-debug.apk",
+  "notes": "Neu: Die App erscheint jetzt bei 'Oeffnen mit' bzw. 'Teilen' fuer PDFs (z.B. aus WhatsApp) und legt daraus automatisch eine neue Tour an."
 }
