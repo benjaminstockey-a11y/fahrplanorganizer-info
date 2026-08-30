@@ -1,5 +1,5 @@
 {
-  "version": "2.8.0",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.8.0/app-debug.apk",
-  "notes": "Update-Funktion läuft jetzt über GitHub - funktioniert auch über Mobilfunk (mobile Daten), nicht mehr nur im selben WLAN wie der Entwicklungsrechner."
+  "version": "2.8.1",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.8.1/app-debug.apk",
+  "notes": "Download-Button reagierte teils gar nicht (hängender Installations-Berechtigungscheck auf manchen Android-Versionen), jetzt behoben."
 }
