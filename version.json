@@ -1,5 +1,5 @@
 {
-  "version": "2.10.1",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.10.1/app-debug.apk",
-  "notes": "Bugfix: Bildvorschau bei Anhängen, die vor dem letzten Update hinzugefügt wurden, wird jetzt automatisch nachträglich erzeugt."
+  "version": "2.11.0",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.11.0/app-debug.apk",
+  "notes": "Neu: Beim Google-Maps-Sync wird der Linienname automatisch in die Zwischenablage kopiert, zum einfachen Einfügen beim Speichern der Liste in Google Maps."
 }
