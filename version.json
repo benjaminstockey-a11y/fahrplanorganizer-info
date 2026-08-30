@@ -1,5 +1,5 @@
 {
-  "version": "2.16.0",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.16.0/app-debug.apk",
-  "notes": "Der Verlauf im Updates-Menue zeigt jetzt echte Versionen von GitHub statt Beispieldaten und ist aufklappbar."
+  "version": "2.17.0",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.17.0/app-debug.apk",
+  "notes": "Neu: Hinweg/Rueckweg-Auswahl bei Stationen, wenn das PDF beide Richtungen abdeckt. Google-Maps-Sync nutzt die ausgewaehlte Richtung."
 }
