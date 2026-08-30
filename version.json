@@ -1,5 +1,5 @@
 {
-  "version": "2.18.0",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.18.0/app-debug.apk",
-  "notes": "Neu: Vor jedem Loeschen (Tour, Station, Anhang) erscheint jetzt eine Bestaetigungsabfrage."
+  "version": "2.19.0",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.19.0/app-debug.apk",
+  "notes": "Neu: Route startet beim Abholen von der Schule automatisch am aktuellen GPS-Standort. Bugfix: reine Rueckfahrt-PDFs landeten faelschlich nicht in der normalen Stationsliste."
 }
