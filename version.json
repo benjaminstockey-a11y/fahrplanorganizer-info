@@ -1,5 +1,5 @@
 {
-  "version": "2.11.0",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.11.0/app-debug.apk",
-  "notes": "Neu: Beim Google-Maps-Sync wird der Linienname automatisch in die Zwischenablage kopiert, zum einfachen Einfügen beim Speichern der Liste in Google Maps."
+  "version": "2.12.0",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.12.0/app-debug.apk",
+  "notes": "Neu: Die Adresse der Schule wird beim PDF-Import jetzt automatisch als eigene Station eingefügt."
 }
