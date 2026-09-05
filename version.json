@@ -1,5 +1,5 @@
 {
-  "version": "2.36.0",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.36.0/Fahrplanorganizer_Setup.apk",
-  "notes": "Neu: Direkte Schritt-fuer-Schritt-Anleitung bei noch keiner angelegten Tour, ohne extra Hilfe-Seite."
+  "version": "2.37.0",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.37.0/Fahrplanorganizer_Setup.apk",
+  "notes": "Neu: Support ist jetzt ein eigener Menuepunkt im Burger-Menue. Das Plus fuer neue Touren steht jetzt oben in der Menueleiste."
 }
