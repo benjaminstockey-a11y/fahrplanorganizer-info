@@ -1,5 +1,5 @@
 {
-  "version": "2.34.0",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.34.0/Fahrplanorganizer_Setup.apk",
-  "notes": "Kleinere interne Verbesserungen."
+  "version": "2.35.0",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.35.0/Fahrplanorganizer_Setup.apk",
+  "notes": "Neu: Der App-Hintergrund passt sich jetzt automatisch dezent an die aktuelle Jahreszeit an."
 }
