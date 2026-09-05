@@ -1,5 +1,5 @@
 {
-  "version": "2.32.0",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.32.0/app-debug.apk",
-  "notes": "Kleinere interne Verbesserungen."
+  "version": "2.33.0",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.33.0/app-debug.apk",
+  "notes": "Neu: Wochentag und aktuelles Datum stehen jetzt oben in der Menueleiste."
 }
