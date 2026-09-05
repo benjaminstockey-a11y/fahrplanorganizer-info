@@ -1,5 +1,5 @@
 {
-  "version": "2.25.0",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.25.0/app-debug.apk",
-  "notes": "Neu: Auf den Namen einer Station tippen, um sie auszusetzen (z.B. kranker Schueler) - wird bei Google-Maps-Sync uebersprungen, bleibt aber in der Liste."
+  "version": "2.26.0",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.26.0/app-debug.apk",
+  "notes": "Neu: Nach einem Update zeigt die App einmalig an, was sich seit der zuletzt genutzten Version geaendert hat."
 }
