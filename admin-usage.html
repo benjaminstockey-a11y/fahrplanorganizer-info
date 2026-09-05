@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nutzungsübersicht</title>
+<style>
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: #F4F1E9;
+    color: #1F3D3A;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px 16px 60px;
+  }
+  h1 { font-size: 20px; margin-bottom: 4px; }
+  .sub { color: #57656A; font-size: 13px; margin-bottom: 24px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-bottom: 24px; }
+  .card {
+    background: #fff;
+    border: 1px solid #DCD6C6;
+    border-radius: 12px;
+    padding: 16px;
+  }
+  .card .num { font-size: 28px; font-weight: 700; color: #C9622A; }
+  .card .label { font-size: 12px; color: #57656A; margin-top: 4px; }
+  .section {
+    background: #fff;
+    border: 1px solid #DCD6C6;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  .section h2 { font-size: 14px; margin: 0 0 10px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid #EEE9DC; }
+  th { color: #57656A; font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.4px; }
+  .status { font-size: 13px; color: #57656A; margin-bottom: 16px; }
+  button {
+    background: #1F3D3A;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <h1>Nutzungsübersicht</h1>
+  <div class="sub">Bachem Fahrplanorganizer — nur für den Administrator</div>
+  <button onclick="load()">Aktualisieren</button>
+  <div class="status" id="status"></div>
+
+  <div class="cards" id="cards"></div>
+
+  <div class="section">
+    <h2>Nach Version</h2>
+    <table id="versionTable"><thead><tr><th>Version</th><th>Personen</th></tr></thead><tbody></tbody></table>
+  </div>
+
+  <div class="section">
+    <h2>Nach Sprache</h2>
+    <table id="languageTable"><thead><tr><th>Sprache</th><th>Personen</th></tr></thead><tbody></tbody></table>
+  </div>
+
+<script>
+const PROJECT = 'bachem-support';
+const BASE = `https://firestore.googleapis.com/v1/projects/${PROJECT}/databases/(default)/documents/usage`;
+
+function fieldValue(doc, key) {
+  const f = doc.fields && doc.fields[key];
+  if (!f) return null;
+  return f.stringValue || f.timestampValue || null;
+}
+
+async function fetchAllDocs() {
+  let docs = [];
+  let pageToken = null;
+  do {
+    const url = new URL(BASE);
+    url.searchParams.set('pageSize', '300');
+    if (pageToken) url.searchParams.set('pageToken', pageToken);
+    const res = await fetch(url.toString());
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    docs = docs.concat(data.documents || []);
+    pageToken = data.nextPageToken || null;
+  } while (pageToken);
+  return docs;
+}
+
+function daysAgo(iso) {
+  if (!iso) return Infinity;
+  return (Date.now() - new Date(iso).getTime()) / (1000 * 60 * 60 * 24);
+}
+
+async function load() {
+  const status = document.getElementById('status');
+  status.textContent = 'Lade …';
+  try {
+    const docs = await fetchAllDocs();
+    const total = docs.length;
+    let active7 = 0, active30 = 0;
+    const byVersion = {};
+    const byLanguage = {};
+    for (const doc of docs) {
+      const lastSeen = fieldValue(doc, 'lastSeen');
+      const age = daysAgo(lastSeen);
+      if (age <= 7) active7++;
+      if (age <= 30) active30++;
+      const version = fieldValue(doc, 'appVersion') || 'unbekannt';
+      const lang = fieldValue(doc, 'language') || 'unbekannt';
+      byVersion[version] = (byVersion[version] || 0) + 1;
+      byLanguage[lang] = (byLanguage[lang] || 0) + 1;
+    }
+
+    document.getElementById('cards').innerHTML = `
+      <div class="card"><div class="num">${total}</div><div class="label">Personen insgesamt</div></div>
+      <div class="card"><div class="num">${active7}</div><div class="label">Aktiv letzte 7 Tage</div></div>
+      <div class="card"><div class="num">${active30}</div><div class="label">Aktiv letzte 30 Tage</div></div>
+    `;
+
+    const versionBody = document.querySelector('#versionTable tbody');
+    versionBody.innerHTML = Object.entries(byVersion)
+      .sort((a, b) => b[1] - a[1])
+      .map(([v, c]) => `<tr><td>${v}</td><td>${c}</td></tr>`)
+      .join('');
+
+    const langNames = { de: 'Deutsch', en: 'English', ru: 'Русский', pl: 'Polski', tr: 'Türkçe', it: 'Italiano' };
+    const languageBody = document.querySelector('#languageTable tbody');
+    languageBody.innerHTML = Object.entries(byLanguage)
+      .sort((a, b) => b[1] - a[1])
+      .map(([l, c]) => `<tr><td>${langNames[l] || l}</td><td>${c}</td></tr>`)
+      .join('');
+
+    status.textContent = `Stand: ${new Date().toLocaleString('de-DE')}`;
+  } catch (e) {
+    status.textContent = 'Fehler beim Laden: ' + e.message;
+  }
+}
+
+load();
+</script>
+</body>
+</html>
