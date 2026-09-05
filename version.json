@@ -1,5 +1,5 @@
 {
-  "version": "2.27.0",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.27.0/app-debug.apk",
-  "notes": "Neu: Support-Bereich unter Hilfe - Fragen und Anregungen koennen per Textfeld eingegeben und direkt per WhatsApp gesendet werden."
+  "version": "2.27.1",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.27.1/app-debug.apk",
+  "notes": "Verbesserung: Support-Nachricht enthaelt jetzt automatisch den hinterlegten Namen, damit gezielt in WhatsApp geantwortet werden kann."
 }
