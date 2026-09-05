@@ -1,5 +1,5 @@
 {
-  "version": "2.31.0",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.31.0/app-debug.apk",
-  "notes": "Neu: Bestaetigungsabfrage beim Sprachwechsel, danach automatischer App-Neustart."
+  "version": "2.32.0",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.32.0/app-debug.apk",
+  "notes": "Neu: Anonyme Nutzungszaehlung fuer den Administrator ueber eine separate Uebersichtsseite (Hash der E-Mail, keine Klartextdaten)."
 }
