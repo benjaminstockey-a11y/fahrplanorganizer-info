@@ -1,5 +1,5 @@
 {
-  "version": "2.35.0",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.35.0/Fahrplanorganizer_Setup.apk",
-  "notes": "Neu: Der App-Hintergrund passt sich jetzt automatisch dezent an die aktuelle Jahreszeit an."
+  "version": "2.36.0",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.36.0/Fahrplanorganizer_Setup.apk",
+  "notes": "Neu: Direkte Schritt-fuer-Schritt-Anleitung bei noch keiner angelegten Tour, ohne extra Hilfe-Seite."
 }
