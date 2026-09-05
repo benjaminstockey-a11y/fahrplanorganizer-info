@@ -1,5 +1,5 @@
 {
-  "version": "2.29.0",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.29.0/app-debug.apk",
-  "notes": "Neu: Anonymes Antwortsystem fuer Support-Nachrichten - Antworten erscheinen automatisch in der App der Person, ohne dass sich beide Seiten kennen muessen."
+  "version": "2.29.1",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.29.1/app-debug.apk",
+  "notes": "Bugfix: Statusabzeichen im Updates-Menue lief auf manchen Bildschirmen rechts aus dem sichtbaren Bereich."
 }
