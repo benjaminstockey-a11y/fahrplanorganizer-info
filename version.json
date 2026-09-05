@@ -1,5 +1,5 @@
 {
-  "version": "2.29.1",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.29.1/app-debug.apk",
-  "notes": "Bugfix: Statusabzeichen im Updates-Menue lief auf manchen Bildschirmen rechts aus dem sichtbaren Bereich."
+  "version": "2.30.0",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.30.0/app-debug.apk",
+  "notes": "Grosses Update: Sprachauswahl fuer die gesamte App (Deutsch, Englisch, Russisch, Polnisch, Tuerkisch, Italienisch), inklusive Sprachausgabe."
 }
