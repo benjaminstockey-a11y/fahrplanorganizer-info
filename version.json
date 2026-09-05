@@ -1,5 +1,5 @@
 {
-  "version": "2.26.0",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.26.0/app-debug.apk",
-  "notes": "Neu: Nach einem Update zeigt die App einmalig an, was sich seit der zuletzt genutzten Version geaendert hat."
+  "version": "2.27.0",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.27.0/app-debug.apk",
+  "notes": "Neu: Support-Bereich unter Hilfe - Fragen und Anregungen koennen per Textfeld eingegeben und direkt per WhatsApp gesendet werden."
 }
