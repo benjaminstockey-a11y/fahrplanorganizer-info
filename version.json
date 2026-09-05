@@ -1,5 +1,5 @@
 {
-  "version": "2.28.0",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.28.0/app-debug.apk",
-  "notes": "Neu: Support-Nachricht wird jetzt still im Hintergrund per E-Mail verschickt, statt WhatsApp zu oeffnen."
+  "version": "2.29.0",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.29.0/app-debug.apk",
+  "notes": "Neu: Anonymes Antwortsystem fuer Support-Nachrichten - Antworten erscheinen automatisch in der App der Person, ohne dass sich beide Seiten kennen muessen."
 }
