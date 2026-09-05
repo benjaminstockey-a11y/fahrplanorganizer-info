@@ -1,5 +1,5 @@
 {
-  "version": "2.23.0",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.23.0/app-debug.apk",
-  "notes": "Neu: Navigations-Hinweis im PDF (z.B. 'Anfahrt ueber ... fuer Navieingabe beachten') wird jetzt statt der offiziellen Schuladresse verwendet."
+  "version": "2.24.0",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.24.0/app-debug.apk",
+  "notes": "Neu: Sprachansage beim App-Start, falls ein Update verfuegbar ist. Verbesserungen an der PDF-Erkennung wirken jetzt auch rueckwirkend auf bestehende Touren."
 }
