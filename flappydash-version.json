@@ -1,5 +1,5 @@
 {
-  "version": "0",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v0/FlappyDash.apk",
-  "notes": "Erste Version von FlappyDash."
+  "version": "0.1",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v0.1/FlappyDash.apk",
+  "notes": "Charakterauswahl, Endless-Runner mit Muenzen und Aufgaben, Support, Sprachwechsel mit Neustart, Ton-Ausgabe."
 }
