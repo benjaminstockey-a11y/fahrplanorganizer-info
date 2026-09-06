@@ -1,5 +1,5 @@
 {
-  "version": "0.1",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v0.1/FlappyDash.apk",
-  "notes": "Charakterauswahl, Endless-Runner mit Muenzen und Aufgaben, Support, Sprachwechsel mit Neustart, Ton-Ausgabe."
+  "version": "0.2",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v0.2/FlappyDash-0.2.apk",
+  "notes": "Laufende Figuren mit Beinanimation, E-Mail-Anmeldung/Gast-Modus, Online-Bestenliste."
 }
