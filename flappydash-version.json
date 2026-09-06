@@ -1,5 +1,5 @@
 {
-  "version": "0.3",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v0.3/FlappyDash-0.3.apk",
-  "notes": "Anmelde-Bildschirm wird jetzt bei jedem App-Start angezeigt."
+  "version": "0.4",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v0.4/FlappyDash-0.4.apk",
+  "notes": "Sprache und Support fuer Gaeste gesperrt, jeder Spielstand wird an die Bestenliste gesendet."
 }
