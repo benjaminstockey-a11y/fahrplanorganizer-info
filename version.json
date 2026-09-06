@@ -1,5 +1,5 @@
 {
-  "version": "2.37.1",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.37.1/Fahrplanorganizer_Setup.apk",
-  "notes": "Kleinere interne Verbesserungen."
+  "version": "2.38.0",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.38.0/Fahrplanorganizer_Setup.apk",
+  "notes": "Neu: Übersicht aller jemals erfassten Schüler im Burger-Menü. Dort können einzelne Schüler ausgewählt oder alle auf einmal gelöscht werden."
 }
