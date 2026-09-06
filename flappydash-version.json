@@ -1,5 +1,5 @@
 {
-  "version": "1.4",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v1.4/AlpakaAndFriends-1.4.apk",
-  "notes": "Laufrichtung der Figuren umgekehrt, Powerpilz haelt laenger an, Melodie in den Einstellungen waehlbar (3 Tracks)."
+  "version": "1.5",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v1.5/AlpakaAndFriends-1.5.apk",
+  "notes": "Support-Antworten erscheinen jetzt automatisch (beim Zurueckkehren zur Startseite + alle 20s), ohne dass die App neu gestartet werden muss."
 }
