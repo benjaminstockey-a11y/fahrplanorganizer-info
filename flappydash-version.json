@@ -1,5 +1,5 @@
 {
-  "version": "1.5",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v1.5/AlpakaAndFriends-1.5.apk",
-  "notes": "Support-Antworten erscheinen jetzt automatisch (beim Zurueckkehren zur Startseite + alle 20s), ohne dass die App neu gestartet werden muss."
+  "version": "1.6",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v1.6/AlpakaAndFriends-1.6.apk",
+  "notes": "Neuer Shop: Muenzen gegen Items eintauschen (Schutzschild, Kopfstart, Start-Pilz)."
 }
