@@ -1,5 +1,5 @@
 {
-  "version": "0.9",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v0.9/FlappyDash-0.9.apk",
-  "notes": "Neue Hintergrundmusik: froehliche Dur-Akkordfolge (C-Am-F-G) mit Kick/Hihat-Rhythmus."
+  "version": "1",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v1/FlappyDash-1.apk",
+  "notes": "Level einfacher gemacht: langsamerer Levelaufstieg, geringere Tempo- und Schwierigkeitssteigerung."
 }
