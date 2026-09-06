@@ -1,5 +1,5 @@
 {
-  "version": "2.39.0",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.39.0/Fahrplanorganizer_Setup.apk",
-  "notes": "Neu: Support-Antworten werden dauerhaft im Burger-Menü unter „Support Antwort“ gespeichert und angezeigt – auch ohne die App neu zu starten. Die Hilfe-Themen im Burger-Menü lassen sich jetzt einzeln auf- und zuklappen. Neuer Hinweis im Menü zur Weitergabe der App."
+  "version": "2.39.1",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.39.1/Fahrplanorganizer_Setup.apk",
+  "notes": "Beim App-Start wird automatisch einmalig auf ein neues Update geprüft und direkt als Hinweis angezeigt. Ist eine neue Support-Antwort eingetroffen, erscheint dafür ebenfalls ein Hinweis."
 }
