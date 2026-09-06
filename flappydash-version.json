@@ -1,5 +1,5 @@
 {
-  "version": "0.5",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v0.5/FlappyDash-0.5.apk",
-  "notes": "Ping-Ton bei Muenzen, Jubel bei jeder 10. Muenze, Bestenliste repariert (Firestore-Regeln erweitert)."
+  "version": "0.6",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v0.6/FlappyDash-0.6.apk",
+  "notes": "Level-System: Schwierigkeit steigt mit der Distanz (mehr Tempo, dichtere und hoehere Hindernisse)."
 }
