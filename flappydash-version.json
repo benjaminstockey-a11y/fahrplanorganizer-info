@@ -1,5 +1,5 @@
 {
-  "version": "2.1",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v2.1/AlpakaAndFriends-2.1.apk",
-  "notes": "Neue Roehren im Level: reinlaufen loest eine Bonus-Sequenz mit Muenzen und manchmal einem Extra-Item aus."
+  "version": "2.2",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v2.2/AlpakaAndFriends-2.2.apk",
+  "notes": "Mit echter E-Mail angemeldete Nutzer muessen sich nicht mehr erneut anmelden. Abmelden-Option in den Einstellungen."
 }
