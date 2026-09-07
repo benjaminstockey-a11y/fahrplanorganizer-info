@@ -1,5 +1,5 @@
 {
-  "version": "2.39.1",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.39.1/Fahrplanorganizer_Setup.apk",
-  "notes": "Beim App-Start wird automatisch einmalig auf ein neues Update geprüft und direkt als Hinweis angezeigt. Ist eine neue Support-Antwort eingetroffen, erscheint dafür ebenfalls ein Hinweis."
+  "version": "2.39.2",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.39.2/Fahrplanorganizer_Setup.apk",
+  "notes": "Wichtig zu diesem Update: Die App wird ab jetzt mit einem eigenen, echten Signierschlüssel gebaut (nicht mehr mit einem Test-Schlüssel) – dadurch entfällt künftig eine zusätzliche Warnung beim Installieren. Da sich der Schlüssel ändert, lässt Android dieses eine Mal keine normale Aktualisierung zu: Bitte VOR der Installation dieser Version die bisherige App einmal deinstallieren. Dabei gehen die auf dem Gerät gespeicherten Touren/Schüler/Einstellungen verloren (außer Android hat automatisch ein Cloud-Backup angelegt) – am besten vorher notieren, was wichtig ist. Ab dieser Version funktionieren zukünftige Updates dann wieder ganz normal, ohne Datenverlust."
 }
