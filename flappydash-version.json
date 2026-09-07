@@ -1,5 +1,5 @@
 {
-  "version": "1.8",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v1.8/AlpakaAndFriends-1.8.apk",
-  "notes": "Ab Level 5 neue Level-Elemente: Bodenloecher zum Ueberspringen, schwebende Hindernisse (nicht springen!), seltene Edelsteine (+5 Muenzen) und Wolken-Kulisse."
+  "version": "1.9",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v1.9/AlpakaAndFriends-1.9.apk",
+  "notes": "Level aufwendiger: Parallax-Huegel im Hintergrund, wechselnde Bodenfarben, Spikes und Bloecke als Hindernisformen, ab Level 8 wackelnde Hindernisse."
 }
