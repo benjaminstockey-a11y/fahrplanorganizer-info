@@ -1,5 +1,5 @@
 {
-  "version": "2",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v2/AlpakaAndFriends-2.apk",
-  "notes": "Grafik aufgewertet: Himmel-Farbverlauf, Gras-Textur am Boden, Hindernisse mit 3D-Schattierung, glaenzende Muenzen, weicher Bodenschatten unter der Figur, Staub-Partikel bei der Landung."
+  "version": "2.1",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v2.1/AlpakaAndFriends-2.1.apk",
+  "notes": "Neue Roehren im Level: reinlaufen loest eine Bonus-Sequenz mit Muenzen und manchmal einem Extra-Item aus."
 }
