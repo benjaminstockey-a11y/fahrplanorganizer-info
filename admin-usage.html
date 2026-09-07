@@ -66,6 +66,14 @@
     <table id="languageTable"><thead><tr><th>Sprache</th><th>Personen</th></tr></thead><tbody></tbody></table>
   </div>
 
+  <div class="section">
+    <h2>Personen</h2>
+    <table id="peopleTable">
+      <thead><tr><th>Name</th><th>Version</th><th>Sprache</th><th>Zuletzt aktiv</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
 <script>
 const PROJECT = 'bachem-support';
 const BASE = `https://firestore.googleapis.com/v1/projects/${PROJECT}/databases/(default)/documents/usage`;
@@ -134,6 +142,21 @@ async function load() {
     languageBody.innerHTML = Object.entries(byLanguage)
       .sort((a, b) => b[1] - a[1])
       .map(([l, c]) => `<tr><td>${langNames[l] || l}</td><td>${c}</td></tr>`)
+      .join('');
+
+    const escapeHtml = (s) => String(s).replace(/[&<>"']/g, (c) => ({
+      '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
+    }[c]));
+    const peopleBody = document.querySelector('#peopleTable tbody');
+    peopleBody.innerHTML = docs
+      .map((doc) => ({
+        name: fieldValue(doc, 'name') || '—',
+        version: fieldValue(doc, 'appVersion') || '—',
+        lang: langNames[fieldValue(doc, 'language')] || fieldValue(doc, 'language') || '—',
+        lastSeen: fieldValue(doc, 'lastSeen'),
+      }))
+      .sort((a, b) => new Date(b.lastSeen || 0) - new Date(a.lastSeen || 0))
+      .map((p) => `<tr><td>${escapeHtml(p.name)}</td><td>${escapeHtml(p.version)}</td><td>${escapeHtml(p.lang)}</td><td>${p.lastSeen ? new Date(p.lastSeen).toLocaleString('de-DE') : '—'}</td></tr>`)
       .join('');
 
     status.textContent = `Stand: ${new Date().toLocaleString('de-DE')}`;

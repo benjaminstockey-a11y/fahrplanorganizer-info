@@ -1,5 +1,5 @@
 {
-  "version": "2.39.3",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.39.3/Fahrplanorganizer_Setup.apk",
-  "notes": "Fehlerbehebung: Wenn Touren bereits angelegt waren und danach unter Einstellungen „Meine Adresse“ eingetragen wurde, wurde diese bisher nicht als Station übernommen (erst beim erneuten Einlesen des Fahrplans). Jetzt wird sie sofort und automatisch in bestehende Touren ergänzt."
+  "version": "2.39.5",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.39.5/Fahrplanorganizer_Setup.apk",
+  "notes": "Kleinere interne Verbesserungen."
 }
