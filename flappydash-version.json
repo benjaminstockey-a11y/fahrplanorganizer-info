@@ -1,5 +1,5 @@
 {
-  "version": "2.3",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v2.3/AlpakaAndFriends-2.3.apk",
-  "notes": "Neuer Jump-and-Run-Modus mit freier Steuerung, drei Welten (Wiese, Hoehle, Himmel) und eigenem Soundtrack."
+  "version": "2.4",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v2.4/AlpakaAndFriends-2.4.apk",
+  "notes": "Jump-and-Run anspruchsvoller: bewegte Plattformen, Gefahren-Spikes, haerteres zweites Levelhalb, Raetsel-Roehren mit Druckplatten-Truhenraum. Kleinere, transparente Steuerung blockiert nicht mehr die Sicht."
 }
