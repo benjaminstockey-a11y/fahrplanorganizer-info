@@ -1,5 +1,5 @@
 {
-  "version": "2.2",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v2.2/AlpakaAndFriends-2.2.apk",
-  "notes": "Mit echter E-Mail angemeldete Nutzer muessen sich nicht mehr erneut anmelden. Abmelden-Option in den Einstellungen."
+  "version": "2.3",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v2.3/AlpakaAndFriends-2.3.apk",
+  "notes": "Neuer Jump-and-Run-Modus mit freier Steuerung, drei Welten (Wiese, Hoehle, Himmel) und eigenem Soundtrack."
 }
