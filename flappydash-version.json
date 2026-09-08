@@ -1,5 +1,5 @@
 {
-  "version": "2.4",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v2.4/AlpakaAndFriends-2.4.apk",
-  "notes": "Jump-and-Run anspruchsvoller: bewegte Plattformen, Gefahren-Spikes, haerteres zweites Levelhalb, Raetsel-Roehren mit Druckplatten-Truhenraum. Kleinere, transparente Steuerung blockiert nicht mehr die Sicht."
+  "version": "2.5",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v2.5/AlpakaAndFriends-2.5.apk",
+  "notes": "Jump-and-Run Level-Generierung repariert: Sprünge werden jetzt physikalisch korrekt begrenzt, sodass kein Level mehr unlösbare Sprungdistanzen erzeugen kann (betraf besonders Cave- und Sky-Welt ohne durchgehenden Boden)."
 }
