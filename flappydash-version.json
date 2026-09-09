@@ -1,5 +1,5 @@
 {
-  "version": "2.6",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v2.6/AlpakaAndFriends-2.6.apk",
-  "notes": "Jump-and-Run Level neu gestaltet: Level werden jetzt in Mario-artigen Abschnitten gebaut (durchgehende Böden, Treppen, Sprünge über Lücken, schwebende Plattform-Inseln). Wichtiger Fix: die roten Gefahren-Bereiche waren zuvor manchmal die einzige Landefläche und dadurch unüberwindbar – Gefahren sind jetzt Stachelgruben INNERHALB von Lücken, über die man springen muss, nie mehr eine Landefläche."
+  "version": "2.7",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v2.7/AlpakaAndFriends-2.7.apk",
+  "notes": "Röhren stehen jetzt sichtbar auf breiten Weg-Plattformen statt fix auf Bodenhöhe oder im Leeren zu schweben – man erkennt sie klar auf dem begehbaren Pfad. Nach dem Rätsel kehrt man außerdem auf der richtigen Höhe zurück, statt immer auf Bodenhöhe zu landen."
 }
