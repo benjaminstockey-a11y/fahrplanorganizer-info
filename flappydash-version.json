@@ -1,5 +1,5 @@
 {
-  "version": "2.8",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v2.8/AlpakaAndFriends-2.8.apk",
-  "notes": "Steuerung (Vor/Zurück/Springen) sitzt jetzt weiter unten und ist transparenter, damit die Finger das Spielfeld nicht mehr verdecken. Level wirken lebendiger und moderner: schwebende, funkelnde Umgebungspartikel, sanft wogender Hintergrund, Landestaub-Effekt beim Aufkommen und eine moderne, abgerundete HUD-Anzeige."
+  "version": "2.9",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v2.9/AlpakaAndFriends-2.9.apk",
+  "notes": "Steuerungstasten (Vor/Zurück/Springen) noch weiter nach unten verschoben, jetzt randlos am unteren Bildschirmrand, damit sie das Spielfeld noch weniger stören."
 }
