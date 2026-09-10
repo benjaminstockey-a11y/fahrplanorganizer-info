@@ -1,5 +1,5 @@
 {
-  "version": "2.9",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v2.9/AlpakaAndFriends-2.9.apk",
-  "notes": "Steuerungstasten (Vor/Zurück/Springen) noch weiter nach unten verschoben, jetzt randlos am unteren Bildschirmrand, damit sie das Spielfeld noch weniger stören."
+  "version": "3.0",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v3.0/AlpakaAndFriends-3.0.apk",
+  "notes": "Neuer Spielmodus: E-Scooter-Lieferspiel! Auf drei Fahrspuren Autos und Schlaglöchern ausweichen und Pakete ausliefern, bevor die Zeit abläuft – jede Lieferung verlängert die Zeit, ein Zusammenstoß kostet Zeit und bremst kurz ab. Eigener Soundtrack, eigenes HUD, verdiente Münzen zählen wie gewohnt für den Shop."
 }
