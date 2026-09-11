@@ -1,5 +1,5 @@
 {
-  "version": "3.10",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v3.10/AlpakaAndFriends-3.10.apk",
-  "notes": "Einstellungen überarbeitet: Alle Bereiche (Sprache, Ton, Musik, Update, Support) sind jetzt einzeln auf- und zuklappbar - einfach auf die Überschrift tippen."
+  "version": "3.11",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v3.11/AlpakaAndFriends-3.11.apk",
+  "notes": "Fehler behoben: Updates ab Version 3.10 wurden von der App nicht erkannt (Versionsvergleich war fehlerhaft). Ab jetzt werden neue Versionen wieder zuverlässig angezeigt."
 }
