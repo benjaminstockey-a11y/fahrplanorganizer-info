@@ -1,5 +1,5 @@
 {
-  "version": "3.6",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v3.6/AlpakaAndFriends-3.6.apk",
-  "notes": "Sicherheitslücke behoben: man konnte die App ohne gültige E-Mail-Anmeldung trotzdem nutzen, wenn sie nur in den Hintergrund statt komplett geschlossen wurde. Die Anmeldung wird jetzt bei jedem Zurückkehren in die App zuverlässig geprüft."
+  "version": "3.7",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v3.7/AlpakaAndFriends-3.7.apk",
+  "notes": "Neue Einstellung „Eigene Musik verwenden“ in den Einstellungen: aktiviert, spielt die App keine eigene Hintergrundmusik mehr ab, sodass Spotify, Amazon Music oder eine andere Musik-App ungestört im Hintergrund läuft."
 }
