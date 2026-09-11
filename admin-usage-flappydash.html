@@ -68,7 +68,7 @@
 
   <div class="section">
     <h2>Wie oft gespielt (pro Person)</h2>
-    <table id="sessionsTable"><thead><tr><th>#</th><th>Aufrufe</th><th>Zuletzt aktiv</th><th>Version</th><th>Sprache</th></tr></thead><tbody></tbody></table>
+    <table id="sessionsTable"><thead><tr><th>Name</th><th>Anmeldung</th><th>Aufrufe</th><th>Zuletzt aktiv</th><th>Version</th><th>Sprache</th></tr></thead><tbody></tbody></table>
   </div>
 
 <script>
@@ -127,10 +127,14 @@ async function load() {
       const version = fieldValue(doc, 'appVersion') || 'unbekannt';
       const lang = fieldValue(doc, 'language') || 'unbekannt';
       const sessions = fieldInt(doc, 'sessionCount') || 1;
+      const playerName = fieldValue(doc, 'playerName');
+      const authMethod = fieldValue(doc, 'authMethod');
+      const email = fieldValue(doc, 'email');
+      const loginLabel = authMethod === 'email' ? (email || 'E-Mail') : (authMethod === 'guest' ? 'Gast' : 'unbekannt');
       totalSessions += sessions;
       byVersion[version] = (byVersion[version] || 0) + 1;
       byLanguage[lang] = (byLanguage[lang] || 0) + 1;
-      rows.push({ sessions, lastSeen, version, lang: langNames[lang] || lang });
+      rows.push({ sessions, lastSeen, version, lang: langNames[lang] || lang, name: playerName || '–', login: loginLabel });
     }
     const avgSessions = total > 0 ? (totalSessions / total).toFixed(1) : '0';
 
@@ -142,10 +146,11 @@ async function load() {
       <div class="card"><div class="num">${avgSessions}</div><div class="label">Ø Aufrufe pro Person</div></div>
     `;
 
+    const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
     const sessionsBody = document.querySelector('#sessionsTable tbody');
     sessionsBody.innerHTML = rows
       .sort((a, b) => b.sessions - a.sessions)
-      .map((r, i) => `<tr><td>${i + 1}</td><td>${r.sessions}</td><td>${r.lastSeen ? new Date(r.lastSeen).toLocaleString('de-DE') : 'unbekannt'}</td><td>${r.version}</td><td>${r.lang}</td></tr>`)
+      .map((r) => `<tr><td>${esc(r.name)}</td><td>${esc(r.login)}</td><td>${r.sessions}</td><td>${r.lastSeen ? new Date(r.lastSeen).toLocaleString('de-DE') : 'unbekannt'}</td><td>${r.version}</td><td>${r.lang}</td></tr>`)
       .join('');
 
     const versionBody = document.querySelector('#versionTable tbody');

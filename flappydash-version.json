@@ -1,5 +1,5 @@
 {
-  "version": "3.3",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v3.3/AlpakaAndFriends-3.3.apk",
-  "notes": "Update-Installationsproblem behoben: die App wird wieder mit dem ursprünglichen Signierschlüssel gebaut (wie alle Versionen bis 3.1), dadurch funktioniert das automatische Update jetzt wieder wie gewohnt, ohne die alte Version vorher deinstallieren zu müssen. Die Code-Verkleinerung/Optimierung (kleinere APK) bleibt erhalten."
+  "version": "3.4",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v3.4/AlpakaAndFriends-3.4.apk",
+  "notes": "Admin-Nutzungsübersicht zeigt jetzt zusätzlich Figurenname und Anmeldeart (E-Mail-Adresse oder Gast) pro Person an."
 }
