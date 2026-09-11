@@ -1,5 +1,5 @@
 {
-  "version": "3.11",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v3.11/AlpakaAndFriends-3.11.apk",
-  "notes": "Fehler behoben: Updates ab Version 3.10 wurden von der App nicht erkannt (Versionsvergleich war fehlerhaft). Ab jetzt werden neue Versionen wieder zuverlässig angezeigt."
+  "version": "3.12",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v3.12/AlpakaAndFriends-3.12.apk",
+  "notes": "Update-Prüfung repariert: Fehlschläge beim Abruf der Versionsinfo wurden bisher fälschlich als \"Version ist aktuell\" angezeigt - dadurch blieben manche Geräte unbemerkt auf einer alten Version hängen. Jetzt gibt es eine eigene Fehlermeldung, außerdem wird eine robustere Quelle für die Versionsprüfung verwendet."
 }
