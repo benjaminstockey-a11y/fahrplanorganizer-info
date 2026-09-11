@@ -1,5 +1,5 @@
 {
-  "version": "3.4",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v3.4/AlpakaAndFriends-3.4.apk",
-  "notes": "Admin-Nutzungsübersicht zeigt jetzt zusätzlich Figurenname und Anmeldeart (E-Mail-Adresse oder Gast) pro Person an."
+  "version": "3.5",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v3.5/AlpakaAndFriends-3.5.apk",
+  "notes": "Gast-Zugang entfernt — Zugang zur App erfordert jetzt eine echte E-Mail-Adresse. Jump & Run: neuer Speichern-Button sichert den aktuellen Fortschritt (Level + Münzen); beim nächsten Start wird dort fortgesetzt."
 }
