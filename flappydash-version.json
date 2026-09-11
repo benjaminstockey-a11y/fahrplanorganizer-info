@@ -1,5 +1,5 @@
 {
   "version": "3.12",
   "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v3.12/AlpakaAndFriends-3.12.apk",
-  "notes": "Update-Prüfung repariert: Fehlschläge beim Abruf der Versionsinfo wurden bisher fälschlich als \"Version ist aktuell\" angezeigt - dadurch blieben manche Geräte unbemerkt auf einer alten Version hängen. Jetzt gibt es eine eigene Fehlermeldung, außerdem wird eine robustere Quelle für die Versionsprüfung verwendet."
+  "notes": "Update-Prüfung repariert: Fehlschläge beim Abruf der Versionsinfo wurden bisher fälschlich als \"Version ist aktuell\" angezeigt. Außerdem enthielt der vorherige 3.12-Build noch versehentlich alten Code (3.9) durch ein Build-Problem - jetzt korrigiert und verifiziert."
 }
