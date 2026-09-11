@@ -1,5 +1,5 @@
 {
-  "version": "3.7",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v3.7/AlpakaAndFriends-3.7.apk",
-  "notes": "Neue Einstellung „Eigene Musik verwenden“ in den Einstellungen: aktiviert, spielt die App keine eigene Hintergrundmusik mehr ab, sodass Spotify, Amazon Music oder eine andere Musik-App ungestört im Hintergrund läuft."
+  "version": "3.8",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v3.8/AlpakaAndFriends-3.8.apk",
+  "notes": "Neue Buttons in den Einstellungen: „Spotify öffnen“ und „Amazon Music öffnen“ starten die jeweilige App direkt, aktivieren automatisch „Eigene Musik verwenden“ und führen zum Play Store, falls die App nicht installiert ist. Sammel- und Game-Over-Töne bleiben davon unabhängig weiterhin hörbar."
 }
