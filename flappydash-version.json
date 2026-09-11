@@ -1,5 +1,5 @@
 {
-  "version": "3.1",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v3.1/AlpakaAndFriends-3.1.apk",
-  "notes": "E-Scooter fährt jetzt in die andere Richtung (Straße, Verkehr und Lieferungen kommen von links statt von rechts). Jump & Run: nach dem Erreichen der Fahne startet automatisch ein neues, etwas anspruchsvolleres Level statt das Spiel zu beenden – mit Level-Anzeige im HUD."
+  "version": "3.2",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v3.2/AlpakaAndFriends-3.2.apk",
+  "notes": "E-Scooter-Wende zurückgenommen: nur der Roller selbst dreht sich um, Straße/Verkehr/Lieferungen laufen wieder wie vorher. Wichtiger interner Umbau: die App wird jetzt als richtige, signierte Release-Version gebaut. Achtung: wegen des neuen Signierschlüssels muss die App einmalig manuell neu installiert werden (alte Version zuerst deinstallieren), danach funktionieren automatische Updates wie gewohnt."
 }

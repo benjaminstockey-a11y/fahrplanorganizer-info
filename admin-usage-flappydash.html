@@ -66,6 +66,11 @@
     <table id="languageTable"><thead><tr><th>Sprache</th><th>Personen</th></tr></thead><tbody></tbody></table>
   </div>
 
+  <div class="section">
+    <h2>Wie oft gespielt (pro Person)</h2>
+    <table id="sessionsTable"><thead><tr><th>#</th><th>Aufrufe</th><th>Zuletzt aktiv</th><th>Version</th><th>Sprache</th></tr></thead><tbody></tbody></table>
+  </div>
+
 <script>
 const PROJECT = 'bachem-support';
 const BASE = `https://firestore.googleapis.com/v1/projects/${PROJECT}/databases/(default)/documents/usage_flappydash`;
@@ -74,6 +79,12 @@ function fieldValue(doc, key) {
   const f = doc.fields && doc.fields[key];
   if (!f) return null;
   return f.stringValue || f.timestampValue || null;
+}
+
+function fieldInt(doc, key) {
+  const f = doc.fields && doc.fields[key];
+  if (!f || f.integerValue === undefined) return null;
+  return parseInt(f.integerValue, 10);
 }
 
 async function fetchAllDocs() {
@@ -103,9 +114,11 @@ async function load() {
   try {
     const docs = await fetchAllDocs();
     const total = docs.length;
-    let active7 = 0, active30 = 0;
+    let active7 = 0, active30 = 0, totalSessions = 0;
     const byVersion = {};
     const byLanguage = {};
+    const langNames = { de: 'Deutsch', en: 'English', ru: 'Русский', pl: 'Polski', tr: 'Türkçe', hi: 'हिन्दी' };
+    const rows = [];
     for (const doc of docs) {
       const lastSeen = fieldValue(doc, 'lastSeen');
       const age = daysAgo(lastSeen);
@@ -113,15 +126,27 @@ async function load() {
       if (age <= 30) active30++;
       const version = fieldValue(doc, 'appVersion') || 'unbekannt';
       const lang = fieldValue(doc, 'language') || 'unbekannt';
+      const sessions = fieldInt(doc, 'sessionCount') || 1;
+      totalSessions += sessions;
       byVersion[version] = (byVersion[version] || 0) + 1;
       byLanguage[lang] = (byLanguage[lang] || 0) + 1;
+      rows.push({ sessions, lastSeen, version, lang: langNames[lang] || lang });
     }
+    const avgSessions = total > 0 ? (totalSessions / total).toFixed(1) : '0';
 
     document.getElementById('cards').innerHTML = `
       <div class="card"><div class="num">${total}</div><div class="label">Personen insgesamt</div></div>
       <div class="card"><div class="num">${active7}</div><div class="label">Aktiv letzte 7 Tage</div></div>
       <div class="card"><div class="num">${active30}</div><div class="label">Aktiv letzte 30 Tage</div></div>
+      <div class="card"><div class="num">${totalSessions}</div><div class="label">App-Aufrufe insgesamt</div></div>
+      <div class="card"><div class="num">${avgSessions}</div><div class="label">Ø Aufrufe pro Person</div></div>
     `;
+
+    const sessionsBody = document.querySelector('#sessionsTable tbody');
+    sessionsBody.innerHTML = rows
+      .sort((a, b) => b.sessions - a.sessions)
+      .map((r, i) => `<tr><td>${i + 1}</td><td>${r.sessions}</td><td>${r.lastSeen ? new Date(r.lastSeen).toLocaleString('de-DE') : 'unbekannt'}</td><td>${r.version}</td><td>${r.lang}</td></tr>`)
+      .join('');
 
     const versionBody = document.querySelector('#versionTable tbody');
     versionBody.innerHTML = Object.entries(byVersion)
