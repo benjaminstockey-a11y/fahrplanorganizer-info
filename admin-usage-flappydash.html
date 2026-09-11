@@ -154,7 +154,6 @@ async function load() {
       .map(([v, c]) => `<tr><td>${v}</td><td>${c}</td></tr>`)
       .join('');
 
-    const langNames = { de: 'Deutsch', en: 'English', ru: 'Русский', pl: 'Polski', tr: 'Türkçe', hi: 'हिन्दी' };
     const languageBody = document.querySelector('#languageTable tbody');
     languageBody.innerHTML = Object.entries(byLanguage)
       .sort((a, b) => b[1] - a[1])
