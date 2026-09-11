@@ -1,5 +1,5 @@
 {
-  "version": "1.0",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/bachemadmin-v1.0/BachemAdmin-1.0.apk",
-  "notes": "Erste Version: Nutzungsübersicht Fahrplanorganizer & FlappyDash, Support-Ticket-Liste mit direkter Antwortfunktion."
+  "version": "1.1",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/bachemadmin-v1.1/BachemAdmin-1.1.apk",
+  "notes": "App in \"Adminzugriff\" umbenannt, neues Schild/Schlüssel-Logo."
 }
