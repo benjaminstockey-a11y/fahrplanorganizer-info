@@ -1,5 +1,5 @@
 {
-  "version": "3.8",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v3.8/AlpakaAndFriends-3.8.apk",
-  "notes": "Neue Buttons in den Einstellungen: „Spotify öffnen“ und „Amazon Music öffnen“ starten die jeweilige App direkt, aktivieren automatisch „Eigene Musik verwenden“ und führen zum Play Store, falls die App nicht installiert ist. Sammel- und Game-Over-Töne bleiben davon unabhängig weiterhin hörbar."
+  "version": "3.9",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v3.9/AlpakaAndFriends-3.9.apk",
+  "notes": "Echte E-Mail-Verifizierung: Beim Anmelden wird jetzt ein 6-stelliger Bestätigungscode an die eingegebene Adresse gesendet. Nur wer den Code aus seinem Postfach eingibt, erhält Zugang - Fantasie-Adressen funktionieren nicht mehr."
 }
