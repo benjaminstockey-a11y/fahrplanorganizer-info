@@ -1,5 +1,5 @@
 {
-  "version": "3.12",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v3.12/AlpakaAndFriends-3.12.apk",
-  "notes": "Update-Prüfung repariert: Fehlschläge beim Abruf der Versionsinfo wurden bisher fälschlich als \"Version ist aktuell\" angezeigt. Außerdem enthielt der vorherige 3.12-Build noch versehentlich alten Code (3.9) durch ein Build-Problem - jetzt korrigiert und verifiziert."
+  "version": "3.13",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v3.13/AlpakaAndFriends-3.13.apk",
+  "notes": "E-Mail-Versand repariert (EmailJS-Konto-Einstellung angepasst). Außerdem: Bestehende Anmeldungen werden zurückgesetzt - alle müssen sich einmalig erneut mit echter, verifizierter E-Mail-Adresse anmelden, da frühere Anmeldungen vor Einführung der Code-Verifizierung erfolgten."
 }
