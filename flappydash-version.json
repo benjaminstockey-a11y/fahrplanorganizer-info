@@ -1,5 +1,5 @@
 {
-  "version": "3.2",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v3.2/AlpakaAndFriends-3.2.apk",
-  "notes": "E-Scooter-Wende zurückgenommen: nur der Roller selbst dreht sich um, Straße/Verkehr/Lieferungen laufen wieder wie vorher. Wichtiger interner Umbau: die App wird jetzt als richtige, signierte Release-Version gebaut. Achtung: wegen des neuen Signierschlüssels muss die App einmalig manuell neu installiert werden (alte Version zuerst deinstallieren), danach funktionieren automatische Updates wie gewohnt."
+  "version": "3.3",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v3.3/AlpakaAndFriends-3.3.apk",
+  "notes": "Update-Installationsproblem behoben: die App wird wieder mit dem ursprünglichen Signierschlüssel gebaut (wie alle Versionen bis 3.1), dadurch funktioniert das automatische Update jetzt wieder wie gewohnt, ohne die alte Version vorher deinstallieren zu müssen. Die Code-Verkleinerung/Optimierung (kleinere APK) bleibt erhalten."
 }
