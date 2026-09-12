@@ -1,5 +1,5 @@
 {
-  "version": "2.39.5",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.39.5/Fahrplanorganizer_Setup.apk",
-  "notes": "Kleinere interne Verbesserungen."
+  "version": "2.39.6",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.39.6/Fahrplanorganizer_Setup.apk",
+  "notes": "Uhrzeit einer Station lässt sich jetzt direkt in der App antippen und ändern."
 }
