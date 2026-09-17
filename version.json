@@ -1,5 +1,5 @@
 {
-  "version": "2.39.9",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.39.9/Fahrplanorganizer_Setup.apk",
-  "notes": "Uhrzeit steht jetzt neben dem Datum im Banner. Fehlen Name und Adresse in den Einstellungen, erscheint einmal im Monat ein Hinweis."
+  "version": "2.39.10",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.39.10/Fahrplanorganizer_Setup.apk",
+  "notes": "Die Uhrzeit im Banner läuft jetzt live mit Sekunden mit, statt nur den Öffnungszeitpunkt der App zu zeigen."
 }
