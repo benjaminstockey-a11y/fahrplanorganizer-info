@@ -1,5 +1,5 @@
 {
-  "version": "2.39.8",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.39.8/Fahrplanorganizer_Setup.apk",
-  "notes": "Der Update-Hinweis beim Start ist jetzt viel auffälliger, damit er nicht mehr übersehen wird."
+  "version": "2.39.9",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.39.9/Fahrplanorganizer_Setup.apk",
+  "notes": "Uhrzeit steht jetzt neben dem Datum im Banner. Fehlen Name und Adresse in den Einstellungen, erscheint einmal im Monat ein Hinweis."
 }
