@@ -1,5 +1,5 @@
 {
-  "version": "1.1",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/bachemadmin-v1.1/BachemAdmin-1.1.apk",
-  "notes": "App in \"Adminzugriff\" umbenannt, neues Schild/Schlüssel-Logo."
+  "version": "1.2",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/bachemadmin-v1.2/Adminzugriff-1.2.apk",
+  "notes": "Neue Funktion: Support-Nachricht direkt an alle Nutzer verschicken."
 }
