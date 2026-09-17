@@ -1,5 +1,5 @@
 {
-  "version": "2.39.7",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.39.7/Fahrplanorganizer_Setup.apk",
-  "notes": "Beim Aussetzen eines Fahrgasts wird jetzt einmal extra nachgefragt, um ein versehentliches Antippen zu vermeiden."
+  "version": "2.39.8",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.39.8/Fahrplanorganizer_Setup.apk",
+  "notes": "Der Update-Hinweis beim Start ist jetzt viel auffälliger, damit er nicht mehr übersehen wird."
 }
