@@ -1,5 +1,5 @@
 {
-  "version": "3.14",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v3.14/AlpakaAndFriends-3.14.apk",
-  "notes": "Neu: Alpaka-Memory! Ein Merkspiel mit 8 Kartenpaaren unterschiedlich gefärbter Alpaka-Gesichter - über den neuen Button auf dem Startbildschirm erreichbar. Je weniger Züge, desto mehr Münzen gibt es als Belohnung."
+  "version": "3.15",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v3.15/AlpakaAndFriends-3.15.apk",
+  "notes": "Alpaka-Memory hat jetzt 4 Schwierigkeitsstufen: Leicht (8 Paare), Mittel (12), Schwer (15) und Experte (18). Beim Antippen des Memory-Buttons erscheint zuerst die Levelauswahl."
 }
