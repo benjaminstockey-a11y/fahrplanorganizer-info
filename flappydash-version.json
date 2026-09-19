@@ -1,5 +1,5 @@
 {
-  "version": "3.13",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v3.13/AlpakaAndFriends-3.13.apk",
-  "notes": "E-Mail-Versand repariert (EmailJS-Konto-Einstellung angepasst). Außerdem: Bestehende Anmeldungen werden zurückgesetzt - alle müssen sich einmalig erneut mit echter, verifizierter E-Mail-Adresse anmelden, da frühere Anmeldungen vor Einführung der Code-Verifizierung erfolgten."
+  "version": "3.14",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/flappydash-v3.14/AlpakaAndFriends-3.14.apk",
+  "notes": "Neu: Alpaka-Memory! Ein Merkspiel mit 8 Kartenpaaren unterschiedlich gefärbter Alpaka-Gesichter - über den neuen Button auf dem Startbildschirm erreichbar. Je weniger Züge, desto mehr Münzen gibt es als Belohnung."
 }
