@@ -1,5 +1,5 @@
 {
-  "version": "2.39.10",
-  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.39.10/Fahrplanorganizer_Setup.apk",
-  "notes": "Die Uhrzeit im Banner läuft jetzt live mit Sekunden mit, statt nur den Öffnungszeitpunkt der App zu zeigen."
+  "version": "2.39.11",
+  "apk_url": "https://github.com/benjaminstockey-a11y/fahrplanorganizer-info/releases/download/v2.39.11/Fahrplanorganizer_Setup.apk",
+  "notes": "Kleinere interne Verbesserungen."
 }
